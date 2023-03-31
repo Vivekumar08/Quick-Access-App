@@ -1,0 +1,82 @@
+.calcContainer{
+    position: relative;
+    min-height: 4 00px;
+    background: rgba(255, 255, 255,0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255,0.5);
+    border-right: 1px solid rgba(255, 255, 255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255,0.2);
+    backdrop-filter: blur(5px) ;
+    border-radius: 10px;
+    display: grid;
+}
+.calcContainer .calculator{
+    display: grid;
+    position: relative;
+}
+.value{
+    display: grid;
+    grid-column: span 7;
+    height: 75px;
+    width: 420px;
+    border: none;
+    outline: none;
+    text-align: right;
+    background: transparent;
+    padding: 10px;
+    margin-bottom:10px ;
+    color: rgb(27, 26, 26);
+    font-size: 30px;
+    letter-spacing: 2px;
+    border-right: 1px solid rgba(255, 255, 255,0.05);
+    border-bottom: 1px solid rgba(255, 255, 255,0.05);
+}
+.calcContainer .calculator span{
+    display: grid;
+    background: rgba(255, 255, 255,0.2);
+    width: 50px;
+    height: 50px;
+    color: #023047;
+    font-weight: 500;
+    font-size: 18px;
+    user-select: none;
+    padding: 15px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 12px;
+}
+
+.calcContainer .calculator span:hover{
+    transition: 0.1s;
+    background: rgba(255, 255, 255,0.05);
+}
+#allClear{
+    width: auto;
+    grid-column: 1/3;
+}
+#result{
+    width: auto;
+    grid-column: 4/7;
+}
+#allClear:hover {
+    background: tomato;
+    grid-column: 1/3;
+}
+#operator:hover{
+    background: powderblue;
+} 
+#clear:hover {
+    background:limegreen;
+}
+#result:hover {
+    background:lightskyblue;
+}
+#sup_operator{
+    font-size: 20px;
+    bottom: 3em;
+    right: -8em
+}
+#sup_operator:hover{
+    background: powderblue;
+}

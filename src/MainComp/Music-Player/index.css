@@ -1,0 +1,175 @@
+.App {
+    position: relative;
+    height: 40vh;
+    min-width: 250px;
+    width: 50vh;
+    /* z-index: 1000; */
+    /* min-height: 400px fixed; */
+    background: rgba(255, 255, 255,0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255,0.5);
+    border-right: 1px solid rgba(255, 255, 255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255,0.2);
+    backdrop-filter: blur(15px) ;
+    border-radius: 10px;
+    
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.c-player {
+    display: block;
+    background: rgba(255, 255, 255,0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255,0.5);
+    border-right: 1px solid rgba(255, 255, 255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255,0.2);
+    backdrop-filter: blur(15px) ;
+    border-radius: 10px;
+    margin: 0px auto;
+    padding: 50px;
+    box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8), inset 6px 6px 12px rgba(255, 255, 255, 0.4);
+    /* background-color: #313131; */
+    /* border-radius: 16px; */
+}
+
+.c-player > h4 {
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+
+.c-player > p {
+    color: #AAA;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.c-player > p span {
+    position: relative;
+    display: flex;
+    font-weight: 400;
+    background:rgba(170,170,170,0.4) ;
+    color:#161a1d;
+    font-size: 25px;
+    text-align: start;
+}
+.author{
+    color:#ba181b;
+    font-size: 18px;
+}
+
+.c-player--details .details-img {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.c-player--details .details-img img {
+    display: block;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(255, 255, 255, 0.4);
+}
+
+.c-player--details .details-img:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    right: -25px;
+    bottom: -25px;
+    border-radius: 50%;
+    border: 6px dashed rgba(255, 206, 0, 1);
+}
+
+.c-player--details .details-title {
+    /* color: #023047; */
+    color: #252422;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.c-player--details .details-artist {
+    color: #403d39;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.c-player--controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+/* rgba(255, 255, 255, 0.4) */
+.c-player--controls .play-btn{
+    display: flex;
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 40%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), -4px -4px 10px transparent, inset -4px -4px 10px rgba(0, 0, 0, 0.4), inset 4px 4px 10px transparent;
+    border: none;
+    outline: none;
+    /* background-color: #FFCE00; */
+    background-color: #5e60ce;
+    color: #FFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+.c-player--controls .play-btn:hover{
+    box-shadow: 4px 4px 10px transparent, -4px -4px 10px rgba(0, 0, 0, 0.4), inset -4px -4px 10px transparent, inset 4px 4px 10px rgba(0, 0, 0, 0.4);
+    border: none;
+    outline: none;
+    /* background-color: #FFCE00; */
+    background-color: rgba(107, 98, 236, 0.171);
+    color: #FFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+.play-btn:active{
+    display: flex;
+    margin: 0 30px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), -4px -4px 10px transparent, inset -4px -4px 10px rgba(0, 0, 0, 0.4), inset 4px 4px 10px transparent;
+    border: none;
+    outline: none;
+    /* background-color: #FFCE00; */
+    background-color: rgba(107, 98, 236, 0.171);
+    color: #FFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.c-player--controls .skip-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 10px;
+    padding: 12px;
+    background: #f77f00;
+    box-shadow: 4px 4px 10px transparent, -4px -4px 10px rgba(0, 0, 0, 0.4), inset -4px -4px 10px transparent, inset 4px 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 20%;
+    color: #888;
+    font-size: 18px;
+}
+.skip-btn:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), -4px -4px 10px transparent, inset -4px -4px 10px rgba(0, 0, 0, 0.4), inset 4px 4px 10px transparent;
+    background: rgba(107, 98, 236, 0.171);
+    color: #888;
+    font-size: 18px;
+}

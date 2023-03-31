@@ -1,0 +1,157 @@
+/* @import url("https://cdn.syncfusion.com/ej2/material.css"); */
+
+.my-3, #but, h4, p, h5 {
+    color: #023047;
+}
+
+.react-datetime-picker {
+    width: 400px !important;
+}
+
+.App {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.homepage {
+    min-width: 100%;
+    min-height: 100%;
+    background: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: linear-gradient(to bottom right, rgb(255, 253, 125), rgb(151, 250, 184), rgb(253, 209, 158)) */
+
+}
+
+.homepage_header {
+    margin: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 20%;
+    min-height: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    background: white;
+    position: relative
+}
+
+#title {
+    background: white;
+}
+
+.todo-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+}
+
+.butt {
+    grid-column: 3;
+    padding-left: 50px;
+}
+
+#date_time {
+    cursor: Text;
+}
+
+hr {
+    background: transparent;
+}
+
+.form-label {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.dt {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.text__, .text__1 {
+    color: #222;
+    font-size: 16px;
+}
+
+.containerr {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.containerr .remind_ {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmarkk {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */
+
+.containerr .remind_:hover~.checkmarkk {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.containerr .remind_:checked~.checkmarkk {
+    background-color: #53575a;
+}
+
+/* Create the checkmarkk/indicator (hidden when not checked) */
+
+.checkmarkk:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmarkk when checked */
+
+.containerr .remind_:checked~.checkmarkk:after {
+    display: block;
+}
+
+/* Style the checkmarkk/indicator */
+
+.containerr .checkmarkk:after {
+    left: 9px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

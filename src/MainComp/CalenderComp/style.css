@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,900&display=swap');
+
+.box{
+    position: relative;
+    height: auto;
+    width: 100%;
+    z-index: 1000;
+    min-height: 400px fixed;
+    background: rgba(255, 255, 255,0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255,0.5);
+    border-right: 1px solid rgba(255, 255, 255,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255,0.2);
+    backdrop-filter: blur(15px) ;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calendar .day {
+    position: relative;
+    width: calc(100% /7);
+    height: 50%;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    z-index: 3;
+    color: rgb(82, 79, 79);
+    text-align: center;
+}
+#dycalendar .header{
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    color: rgb(22, 21, 21);
+}
+#dycalendar table{
+    width: 100%;
+    margin-top: 10px;
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+#dycalendar table tr:nth-child(1) td{
+    background: white;
+    color: #111;
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: 600;
+}
+#dycalendar table td{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(22, 21, 21);
+    padding:8px;
+}
+#currDay{
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+#currDay:hover{
+    color: white;
+    background: #90be6d;
+    border-radius:4px;
+    padding: 10px;
+    cursor:default;
+}
+.selected{
+    color: white;
+    background: #90be6d;
+    border-radius: 4px;
+    padding: 10px;
+}
+#dycalendar .header{
+    display: flex;
+    position: relative;
+    column-gap: 60px;
+}
+#dycalendar .header .previous{
+    background: white;
+    color: black;
+    font-size: 24px;
+    width: 44px;
+    height: 38px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+#dycalendar .header .next{
+    background: white;
+    color: black;
+    font-size: 24px;
+    width: 44px;
+    height: 38px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+#dycalendar .header .current{
+    font-size: 1.5em;
+    font-weight: 500;
+    cursor: default;
+}
